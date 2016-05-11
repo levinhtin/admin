@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>1st Jasmine Tests</title>
+  
+    <!-- inject:test:css -->
+    <link rel="stylesheet" href="libs/vendor/css/jasmine.css">
+    <!-- endinject --> 
+  
+    <!-- inject:test:js -->
+    <script src="libs/vendor/js/jasmine.js"></script>
+    <script src="libs/vendor/js/jasmine-html.js"></script>
+    <script src="libs/vendor/js/boot.js"></script>
+    <!-- endinject -->
+</head>
+<body>
+  <script>
+    describe('first test', () => {
+      it('true is true', function(){ expect(true).toEqual(true); });
+    });
+  </script>
+</body>
+</html>

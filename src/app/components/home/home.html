@@ -1,0 +1,20 @@
+<h3>{{title}}</h3>
+<article class="post tag-getting-started" *ngFor="let post of posts">
+    <header class="post-header">
+    <span class="post-meta"><time datetime="2014-01-07">07 Jan 2014</time> on <a href="http://ghostintheshell.ghost.io/tag/getting-started/">Getting Started</a></span>
+    <h2 class="post-title"><a [routerLink]="['/post', post.Id]">{{post.Title}}</a></h2>
+
+    <!--<a href="/welcome-to-ghost/#disqus_thread"></a>-->
+    </header>
+    <section class="post-excerpt">
+    <p>You're in! Nice. We've put together a little post to introduce you to the Ghost editor and get you started. Go ahead
+        and edit this post to get going and learn how it all works! Getting Started Writing in markdown is really easy.
+        In the left hand panel of Ghost,…</p>
+    </section>
+</article>
+
+
+<nav class="pagination" role="navigation">
+    <span class="page-number">Page 1 of 1</span>
+</nav>
+

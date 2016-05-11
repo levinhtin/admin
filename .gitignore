@@ -1,0 +1,26 @@
+# Node module
+node_modules/
+
+coverage/
+
+# Bower
+src/bower_components/
+
+# Release
+#dist/
+
+# Build file index
+src/index.html
+
+src/libs/
+
+typings
+
+src/app/**/*.js
+src/app/**/*.map
+
+*.stackdump
+styles/main.css
+.eslintrc
+.jsbeautyrc
+npm-debug.log

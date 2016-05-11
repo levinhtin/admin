@@ -1,0 +1,37 @@
+<html>
+
+  <head>
+    <title>Angular 2 QuickStart</title>
+
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfills, in this exact order -->
+
+    <!-- inject:vendor:css -->
+    <!-- endinject --> 
+    
+    <!-- inject:lte:css -->
+    <!-- endinject -->
+
+    <!-- inject:vendor:js -->
+    <!-- endinject -->
+
+    <!-- inject:systemjs:js -->
+    <!-- endinject -->
+    
+    <!-- 2. Configure SystemJS -->
+    <script>
+      System.import('app').catch(function(err){ console.error(err);  });
+    </script>
+    <base href="/">
+  </head>
+
+  <!-- 3. Display the application -->
+  <body class="hold-transition skin-blue sidebar-mini">
+    <admin-app>Loading...</admin-app>
+    
+    <!-- inject:lte:js -->
+    <!-- endinject -->
+   
+    
+  </body>
+</html>
