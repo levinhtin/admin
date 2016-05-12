@@ -13,7 +13,7 @@ export class UserService {
     this.http = _http;
   }
   public getUsers(): Observable<IUser[]> {
-    return this.http.get('api/user')
+    return this.http.get('http://localhost:56201/api/user')
                     .map(this.extractData)
                     .catch(this.handleError);
   }
@@ -28,7 +28,7 @@ export class UserService {
   private handleError (error: any): Observable<any> {
     // In a real world app, we might send the error to remote logging infrastructure
     let errMsg: string = error.message || 'Server error';
-    console.error(errMsg); // log to console instead
+    console.log(errMsg); // log to console instead
     return Observable.throw(errMsg);
   }
 }

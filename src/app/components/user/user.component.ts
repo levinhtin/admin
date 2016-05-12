@@ -7,7 +7,8 @@ import { IUser } from '../../models/user';
   selector: 'user',
   templateUrl: 'app/components/user/user.html',
   providers:  [
-    HTTP_PROVIDERS
+    HTTP_PROVIDERS,
+    UserService
   ]
 })
 
